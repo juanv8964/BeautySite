@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS leads (
+  id BIGSERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  business TEXT NOT NULL,
+  email TEXT NOT NULL,
+  phone TEXT NOT NULL,
+  type TEXT NOT NULL,
+  plan TEXT NOT NULL,
+  message TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
