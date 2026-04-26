@@ -1,4 +1,6 @@
 import { pool } from "@/lib/db";
+import { ADMIN_SESSION_COOKIE, verifyAdminSessionToken } from "@/lib/admin-auth";
+import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 type LeadRow = {
@@ -14,6 +16,12 @@ type LeadRow = {
 };
 
 export async function GET() {
+  const token = cookies().get(ADMIN_SESSION_COOKIE)?.value;
+
+  if (!verifyAdminSessionToken(token)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const result = await pool.query<LeadRow>(
       "SELECT * FROM leads ORDER BY created_at DESC",
