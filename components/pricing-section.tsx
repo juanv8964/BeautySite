@@ -14,18 +14,22 @@ const plans = [
     ],
   },
   {
-    name: "Plan B",
-    price: "$99/month, no upfront cost",
+    name: "Plan B - Subscription Website",
+    price: "$99/month",
+    note: "No upfront setup cost",
     description:
-      "Best for beauty pros who want to launch without a setup payment.",
+      "Launch your beauty business online without paying a large setup fee upfront.",
     featured: true,
     features: [
-      "No upfront setup payment",
-      "Website build included",
-      "Hosting and maintenance included",
-      "Monthly support",
-      "Launch-ready service and pricing pages",
+      "Full website build included",
+      "Hosting and maintenance",
+      "Mobile responsive design",
+      "Contact and booking integration",
+      "Ongoing support and updates",
+    ],
+    commitmentNote: [
       "12-month minimum commitment",
+      "Website remains active while subscription is maintained",
     ],
   },
   {
@@ -75,6 +79,9 @@ export function PricingSection() {
                 ) : null}
               </div>
               <p className="mt-6 text-2xl font-semibold text-gold">{plan.price}</p>
+              {"note" in plan && plan.note ? (
+                <p className="mt-2 text-sm font-medium text-blush">{plan.note}</p>
+              ) : null}
               <p className="mt-4 text-sm leading-7 text-muted">{plan.description}</p>
               <ul className="mt-6 space-y-3">
                 {plan.features.map((feature) => (
@@ -84,6 +91,15 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
+              {"commitmentNote" in plan && plan.commitmentNote ? (
+                <div className="mt-6 rounded-[1.4rem] border border-gold/20 bg-gold/10 px-4 py-4">
+                  {plan.commitmentNote.map((item) => (
+                    <p key={item} className="text-sm leading-6 text-muted">
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
               <a
                 href="#contact"
                 className="mt-8 inline-flex rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:border-blush/50 hover:bg-white/10"

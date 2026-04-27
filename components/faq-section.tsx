@@ -29,6 +29,21 @@ const faqs = [
     answer:
       "Payment depends on the package you choose. You can either pay an upfront setup plus a lower monthly fee, or choose the monthly option with no setup cost.",
   },
+  {
+    question: "How does the monthly website plan work?",
+    answer:
+      "Our subscription plan includes the website build, hosting, maintenance, and ongoing support for one monthly fee. There is no upfront website setup cost. Your website remains active and fully managed by BeautySite Builders while your subscription is active.",
+  },
+  {
+    question: "What happens if I cancel the subscription?",
+    answer:
+      "If the subscription is canceled, hosting and website access are discontinued at the end of the billing term unless otherwise agreed upon.",
+  },
+  {
+    question: "Can I purchase the website later?",
+    answer:
+      "Yes. Clients on the subscription plan may request a website buyout for full ownership after the minimum commitment period.",
+  },
 ];
 
 export function FaqSection() {
