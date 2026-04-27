@@ -12,6 +12,7 @@ const plans = [
       "Monthly support and edits",
       "Mobile responsive design",
       "Booking and contact integration",
+      "Booking platform integration included",
     ],
     note: "If monthly hosting and maintenance is canceled, hosting and support end, but you retain website ownership and may transfer hosting elsewhere.",
   },
@@ -27,6 +28,7 @@ const plans = [
       "Hosting + maintenance",
       "Mobile responsive design",
       "Contact and booking integration",
+      "Booking platform integration included",
       "Ongoing support and updates",
     ],
     commitmentNote: [
@@ -43,6 +45,7 @@ const plans = [
       "Custom pages",
       "Advanced integrations",
       "Booking platform setup",
+      "Booking platform integration included",
       "Extra sections and features",
       "Brand-specific strategy",
       "Custom quote",
@@ -62,6 +65,11 @@ export function PricingSection() {
           <p className="section-copy mx-auto">
             Choose the package that matches how you want to launch now, with room
             to scale as your business grows.
+          </p>
+          <p className="mt-5 text-sm leading-7 text-muted">
+            Booking platform integration is included with every package. If you
+            already use Acuity, GlossGenius, Square, Fresha, or another booking
+            tool, we can connect it to your website.
           </p>
         </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -110,6 +118,41 @@ export function PricingSection() {
               </a>
             </article>
           ))}
+        </div>
+        <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="glass-card rounded-[2.2rem] p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
+              Booking Platform Setup
+            </p>
+            <h3 className="mt-4 font-display text-4xl text-white">
+              Need help choosing the right booking software?
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              If you do not already have a booking platform, we can help you
+              choose one and set it up for your business.
+            </p>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              We configure your scheduling software, service menu, appointment
+              settings, and integrate it into your site for a smoother launch.
+            </p>
+          </div>
+          <div className="glass-card rounded-[2.2rem] p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blush">
+              Important Note
+            </p>
+            <h3 className="mt-4 font-display text-4xl text-white">
+              Third-party software fees are separate
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              Booking software subscriptions are paid directly by the client to
+              providers like Acuity, GlossGenius, Square, Fresha, or any other
+              platform you choose.
+            </p>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              We handle the website integration and can guide the setup process,
+              but the software subscription itself is not included in website pricing.
+            </p>
+          </div>
         </div>
       </div>
     </section>

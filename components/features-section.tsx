@@ -1,7 +1,8 @@
 const features = [
   {
     title: "Online booking",
-    description: "Let clients schedule appointments 24/7 without back-and-forth DMs.",
+    description:
+      "We integrate your preferred booking software directly into your website so clients can schedule 24/7 without back-and-forth DMs.",
   },
   {
     title: "Service menu with pricing",
@@ -43,6 +44,18 @@ export function FeaturesSection() {
             Every section is written and structured to help visitors trust your
             brand faster and feel ready to book.
           </p>
+          <div className="mt-8 rounded-[1.75rem] border border-gold/20 bg-gold/10 p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">
+              Booking Platform Integration Included
+            </p>
+            <p className="mt-3 text-sm leading-7 text-muted">
+              We integrate your preferred booking software into your website. If
+              you do not have one yet, we can help you choose and set one up.
+            </p>
+            <p className="mt-3 text-xs uppercase tracking-[0.18em] text-muted">
+              Third-party booking software fees are separate and paid directly by client.
+            </p>
+          </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {features.map((feature, index) => (
