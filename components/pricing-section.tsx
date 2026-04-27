@@ -1,17 +1,19 @@
 const plans = [
   {
-    name: "Plan A",
+    name: "Plan A - Ownership Package",
     price: "$500 setup + $50/month",
     description:
-      "Best for business owners who want to pay upfront and keep monthly costs low.",
+      "Perfect for business owners who want to own their website while keeping ongoing support and maintenance simple.",
     features: [
       "Custom website build",
+      "You own the website after build completion",
+      "Hosting included",
+      "Ongoing maintenance and security updates",
+      "Monthly support and edits",
       "Mobile responsive design",
-      "Contact and booking form",
-      "Service menu and pricing section",
-      "Hosting and maintenance",
-      "Basic monthly support",
+      "Booking and contact integration",
     ],
+    note: "If monthly hosting and maintenance is canceled, hosting and support end, but you retain website ownership and may transfer hosting elsewhere.",
   },
   {
     name: "Plan B - Subscription Website",
@@ -22,7 +24,7 @@ const plans = [
     featured: true,
     features: [
       "Full website build included",
-      "Hosting and maintenance",
+      "Hosting + maintenance",
       "Mobile responsive design",
       "Contact and booking integration",
       "Ongoing support and updates",
