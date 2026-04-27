@@ -41,8 +41,8 @@ export function FeaturesSection() {
           </p>
           <h2 className="section-heading">Everything beauty clients expect in one polished site</h2>
           <p className="section-copy">
-            Every section is written and structured to help visitors trust your
-            brand faster and feel ready to book.
+            This is more than a scheduler. Your website is structured to showcase
+            your brand, answer questions, build trust, and guide visitors toward booking.
           </p>
           <div className="mt-8 rounded-[1.75rem] border border-gold/20 bg-gold/10 p-5">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">

@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer";
 import { GallerySection } from "@/components/gallery-section";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
+import { MoreThanBookingSection } from "@/components/more-than-booking-section";
 import { PricingSection } from "@/components/pricing-section";
 import { ProcessSection } from "@/components/process-section";
 import { ServicesSection } from "@/components/services-section";
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <TrustSignalsSection />
+      <MoreThanBookingSection />
       <ServicesSection />
       <FeaturesSection />
       <PricingSection />

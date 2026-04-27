@@ -4,14 +4,15 @@ export function HeroSection() {
       <div className="section-shell grid gap-12 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pt-24">
         <div>
           <div className="mb-6 inline-flex rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm text-gold">
-            Premium websites for beauty businesses ready to grow
+            Premium branded websites for beauty businesses ready to grow
           </div>
           <h1 className="max-w-3xl font-display text-5xl font-semibold leading-none text-white sm:text-6xl lg:text-7xl">
-            Luxury Websites for Beauty Brands That Want More Bookings
+            More Than a Booking Link: Luxury Websites That Turn Visits Into Clients
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-            Premium, mobile-first beauty websites built to earn trust, showcase
-            your work, and turn more visitors into booked appointments.
+            We build premium, mobile-first websites for beauty brands, then
+            integrate your booking software into a polished online experience
+            designed to build trust and drive more appointments.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
@@ -29,9 +30,9 @@ export function HeroSection() {
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              ["Built for beauty", "Tailored to salons, nail techs, lash artists, and spas"],
-              ["Mobile-first", "Optimized for the phones your clients actually use"],
-              ["Conversion-ready", "Structured to turn visits into real inquiries and bookings"],
+              ["Custom branding", "Luxury design tailored to your salon, studio, or beauty brand"],
+              ["Professional presence", "A branded website that feels far more elevated than a generic scheduler"],
+              ["Conversion-ready", "Built with strong sections, trust signals, and booking flow that work together"],
             ].map(([title, copy]) => (
               <div key={title} className="glass-card p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blush">
@@ -73,7 +74,7 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="mt-6 rounded-[1.5rem] bg-gradient-to-r from-rose to-plum px-5 py-4 text-center text-sm font-semibold text-white">
-                Clear services, polished branding, and a smoother path to booking
+                Premium branding, trust-building content, and integrated booking in one experience
               </div>
             </div>
           </div>

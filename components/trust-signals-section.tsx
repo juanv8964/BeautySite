@@ -1,23 +1,23 @@
 const trustSignals = [
   {
-    title: "Mobile-first design",
-    description:
-      "Your website is built for the screen your clients use most, so it feels polished and easy to book from anywhere.",
-  },
-  {
     title: "Premium brand presentation",
     description:
-      "Elevated visuals, clean structure, and beauty-focused copy help your business look more established online.",
+      "Luxury visuals and beauty-focused copy help your business stand out above generic booking templates.",
   },
   {
-    title: "Lead-ready forms",
+    title: "Mobile-first design",
     description:
-      "Inquiry and booking sections are designed to turn interest into real conversations with qualified clients.",
+      "Your website is built for the screen your clients use most, so it feels polished and easy to browse and book from anywhere.",
   },
   {
-    title: "Ongoing support after launch",
+    title: "Professional online presence",
     description:
-      "You are not left on your own after go-live. Hosting, maintenance, and support stay part of the experience.",
+      "Branded domains, contact forms, maps, social links, and trust sections make your business feel established online.",
+  },
+  {
+    title: "Lead-ready structure",
+    description:
+      "Hero messaging, portfolios, pricing, policies, FAQs, and calls to action work together to move visitors toward booking.",
   },
 ];
 
@@ -33,8 +33,8 @@ export function TrustSignalsSection() {
             Built for beauty businesses that want to look professional online
           </h2>
           <p className="section-copy">
-            A great beauty website should feel luxurious, build trust fast, and
-            make it obvious how a potential client takes the next step.
+            A booking platform handles scheduling. Your website should handle the
+            branding, trust-building, and conversion work around it.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">

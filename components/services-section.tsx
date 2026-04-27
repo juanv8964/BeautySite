@@ -32,7 +32,8 @@ export function ServicesSection() {
           <h2 className="section-heading">Professional websites tailored to beauty businesses</h2>
           <p className="section-copy">
             Whether you run a solo studio or a growing salon, each package is
-            designed to present your brand beautifully and guide visitors toward booking.
+            designed to present your brand beautifully, support your marketing,
+            and guide visitors into a polished booking experience.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
