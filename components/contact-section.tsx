@@ -38,7 +38,7 @@ const plans = ["Plan A", "Plan B", "Plan C"];
 export function ContactSection() {
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submittedEntries, setSubmittedEntries] = useState<FormData[]>([]);
+  const [, setSubmittedEntries] = useState<FormData[]>([]);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -142,18 +142,19 @@ export function ContactSection() {
               Book a demo
             </p>
             <h2 className="mt-4 font-display text-5xl text-white">
-              Let&apos;s build a site that matches your brand
+              Let&apos;s build a website that helps clients trust you faster
             </h2>
             <p className="mt-5 text-base leading-7 text-muted">
-              Share your business details and preferred package, and your future
-              salon website can be tailored around your services, style, and goals.
+              Tell us about your business, services, and goals, and we&apos;ll map
+              out the best package for a premium website that feels polished and
+              ready to convert.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                "Online booking integration ready",
-                "Service menu and pricing sections",
-                "Mobile-first layout and contact capture",
-                "Easy to connect to a backend later",
+                "Mobile-first design for beauty clients",
+                "Service, pricing, and inquiry sections",
+                "Lead-ready forms built into the site",
+                "Support after launch so you are not left guessing",
               ].map((item) => (
                 <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
                   <p className="text-sm leading-6 text-muted">{item}</p>
@@ -161,9 +162,10 @@ export function ContactSection() {
               ))}
             </div>
             <div className="mt-8 rounded-[1.75rem] border border-gold/20 bg-gold/10 p-5">
-              <p className="text-sm font-semibold text-gold">Location block placeholder</p>
+              <p className="text-sm font-semibold text-gold">What happens next</p>
               <p className="mt-2 text-sm leading-6 text-muted">
-                Add a Google Maps embed or service area section here when you connect real business details.
+                After you submit, you&apos;ll hear back within one business day to
+                talk through your package, timeline, and next steps.
               </p>
             </div>
           </div>
@@ -246,7 +248,7 @@ export function ContactSection() {
                 </p>
               ) : null}
               <p className="text-xs uppercase tracking-[0.18em] text-muted">
-                Local state entries saved: {submittedEntries.length}
+                You&apos;ll get a reply within one business day.
               </p>
             </form>
           </div>

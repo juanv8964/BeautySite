@@ -1,10 +1,33 @@
 const features = [
-  "Online booking",
-  "Service menu with pricing",
-  "Gallery/portfolio",
-  "Contact form",
-  "Google Maps/location section",
-  "Mobile-friendly design",
+  {
+    title: "Online booking",
+    description: "Let clients schedule appointments 24/7 without back-and-forth DMs.",
+  },
+  {
+    title: "Service menu with pricing",
+    description:
+      "Clearly display your services, pricing, and booking options so clients know exactly what to choose.",
+  },
+  {
+    title: "Gallery/portfolio",
+    description:
+      "Showcase your best work and build trust before a client ever messages you.",
+  },
+  {
+    title: "Contact form",
+    description:
+      "Capture serious inquiries directly from your website and follow up quickly.",
+  },
+  {
+    title: "Google Maps/location section",
+    description:
+      "Help clients find your salon, service area, or studio location with confidence.",
+  },
+  {
+    title: "Mobile-friendly design",
+    description:
+      "Give visitors a smooth experience on the device they use most: their phone.",
+  },
 ];
 
 export function FeaturesSection() {
@@ -17,23 +40,23 @@ export function FeaturesSection() {
           </p>
           <h2 className="section-heading">Everything beauty clients expect in one polished site</h2>
           <p className="section-copy">
-            From service menus to booking forms, the experience is built to look
-            premium and feel simple on every screen.
+            Every section is written and structured to help visitors trust your
+            brand faster and feel ready to book.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {features.map((feature, index) => (
             <div
-              key={feature}
+              key={feature.title}
               className="glass-card flex items-start gap-4 p-5"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-blush">
                 {String(index + 1).padStart(2, "0")}
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-white">{feature}</h3>
+                <h3 className="text-lg font-semibold text-white">{feature.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">
-                  Designed to help visitors browse, trust your brand, and take action fast.
+                  {feature.description}
                 </p>
               </div>
             </div>

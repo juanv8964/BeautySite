@@ -4,14 +4,14 @@ export function HeroSection() {
       <div className="section-shell grid gap-12 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pt-24">
         <div>
           <div className="mb-6 inline-flex rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm text-gold">
-            Premium websites for modern beauty businesses
+            Premium websites for beauty businesses ready to grow
           </div>
           <h1 className="max-w-3xl font-display text-5xl font-semibold leading-none text-white sm:text-6xl lg:text-7xl">
-            Book More Clients With a Website That Works
+            Luxury Websites for Beauty Brands That Want More Bookings
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-            A modern booking website for nail techs, salons, lash artists, and
-            beauty professionals.
+            Premium, mobile-first beauty websites built to earn trust, showcase
+            your work, and turn more visitors into booked appointments.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
@@ -21,17 +21,17 @@ export function HeroSection() {
               Book a Demo
             </a>
             <a
-              href="#services"
+              href="#pricing"
               className="rounded-full border border-white/15 bg-white/5 px-7 py-4 text-center text-base font-semibold text-white transition hover:border-blush/50 hover:bg-white/10"
             >
-              View Services
+              See Pricing
             </a>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              ["Mobile-first", "Designed to convert on phones and tablets"],
-              ["Lead-ready", "Booking forms and service menus built in"],
-              ["Premium look", "Elegant visuals that fit beauty brands"],
+              ["Built for beauty", "Tailored to salons, nail techs, lash artists, and spas"],
+              ["Mobile-first", "Optimized for the phones your clients actually use"],
+              ["Conversion-ready", "Structured to turn visits into real inquiries and bookings"],
             ].map(([title, copy]) => (
               <div key={title} className="glass-card p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blush">
@@ -48,10 +48,10 @@ export function HeroSection() {
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <p className="font-display text-3xl text-white">Luxe Nail Studio</p>
-                  <p className="text-sm text-muted">Booking experience preview</p>
+                  <p className="text-sm text-muted">A booking-ready beauty website preview</p>
                 </div>
                 <div className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-                  Live style
+                  Premium build
                 </div>
               </div>
               <div className="space-y-4">
@@ -73,7 +73,7 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="mt-6 rounded-[1.5rem] bg-gradient-to-r from-rose to-plum px-5 py-4 text-center text-sm font-semibold text-white">
-                Easy booking, polished branding, more repeat clients
+                Clear services, polished branding, and a smoother path to booking
               </div>
             </div>
           </div>

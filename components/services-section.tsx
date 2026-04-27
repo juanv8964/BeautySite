@@ -27,12 +27,12 @@ export function ServicesSection() {
       <div className="section-shell">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blush">
-            Services
+            Website Packages
           </p>
-          <h2 className="section-heading">Website packages tailored to beauty brands</h2>
+          <h2 className="section-heading">Professional websites tailored to beauty businesses</h2>
           <p className="section-copy">
-            Each site is designed to feel elevated, easy to use, and ready to
-            help clients book with confidence.
+            Whether you run a solo studio or a growing salon, each package is
+            designed to present your brand beautifully and guide visitors toward booking.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
