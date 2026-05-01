@@ -10,7 +10,7 @@ const features = [
       "Clearly display your services, pricing, and booking options so clients know exactly what to choose.",
   },
   {
-    title: "Gallery/portfolio",
+    title: "Portfolio showcase",
     description:
       "Showcase your best work and build trust before a client ever messages you.",
   },

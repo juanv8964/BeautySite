@@ -11,6 +11,7 @@ import { PricingSection } from "@/components/pricing-section";
 import { ProcessSection } from "@/components/process-section";
 import { ServicesSection } from "@/components/services-section";
 import { TrustSignalsSection } from "@/components/trust-signals-section";
+import { WhoThisIsForSection } from "@/components/who-this-is-for-section";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <MoreThanBookingSection />
       <ServicesSection />
       <FeaturesSection />
+      <WhoThisIsForSection />
       <PricingSection />
       <ProcessSection />
       <GallerySection />
