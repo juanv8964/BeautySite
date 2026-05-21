@@ -4,15 +4,15 @@ export function HeroSection() {
       <div className="section-shell grid gap-12 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pt-24">
         <div>
           <div className="mb-6 inline-flex rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm text-gold">
-            Premium branded websites for beauty businesses ready to grow
+            Custom websites for beauty businesses ready to book more clients
           </div>
           <h1 className="max-w-3xl font-display text-5xl font-semibold leading-none text-white sm:text-6xl lg:text-7xl">
-            More Than a Booking Link: Luxury Websites That Turn Visits Into Clients
+            A Beauty Website That Helps Clients Trust You and Book
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-            We build premium, mobile-first websites for beauty brands, then
-            integrate your booking software into a polished online experience
-            designed to build trust and drive more appointments.
+            We build mobile-friendly websites for salons, nail techs, lash
+            artists, and beauty pros. Your booking software stays connected, and
+            your website gives clients the details they need before they schedule.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
@@ -30,9 +30,9 @@ export function HeroSection() {
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              ["Custom branding", "Luxury design tailored to your salon, studio, or beauty brand"],
-              ["Professional presence", "A branded website that feels far more elevated than a generic scheduler"],
-              ["Conversion-ready", "Built with strong sections, trust signals, and booking flow that work together"],
+              ["Made for beauty pros", "Built around your services, style, policies, and booking flow"],
+              ["Booking connected", "Acuity, GlossGenius, Square, Calendly, or your preferred tool can plug in"],
+              ["Easy to understand", "Clients can see your work, pricing, policies, and next steps in one place"],
             ].map(([title, copy]) => (
               <div key={title} className="glass-card p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blush">
@@ -49,10 +49,10 @@ export function HeroSection() {
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <p className="font-display text-3xl text-white">Luxe Nail Studio</p>
-                  <p className="text-sm text-muted">A booking-ready beauty website preview</p>
+                  <p className="text-sm text-muted">A clear website preview with booking built in</p>
                 </div>
                 <div className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-                  Premium build
+                  Custom build
                 </div>
               </div>
               <div className="space-y-4">
@@ -74,7 +74,7 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="mt-6 rounded-[1.5rem] bg-gradient-to-r from-rose to-plum px-5 py-4 text-center text-sm font-semibold text-white">
-                Premium branding, trust-building content, and integrated booking in one experience
+                Services, policies, proof, and booking in one clear place
               </div>
             </div>
           </div>

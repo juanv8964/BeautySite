@@ -146,15 +146,15 @@ export function ContactSection() {
             </h2>
             <p className="mt-5 text-base leading-7 text-muted">
               Tell us about your business, services, and goals, and we&apos;ll map
-              out the best package for a premium website that feels polished and
-              ready to convert.
+              out the best package for a custom website that is clear, easy to use,
+              and connected to your booking flow.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
                 "Mobile-first design for beauty clients",
                 "Service, pricing, and inquiry sections",
-                "Lead-ready forms built into the site",
-                "Support after launch so you are not left guessing",
+                "Inquiry forms built into the site",
+                "Support after launch so updates stay simple",
               ].map((item) => (
                 <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
                   <p className="text-sm leading-6 text-muted">{item}</p>

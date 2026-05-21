@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Can you redesign my current website?",
     answer:
-      "Yes. Existing beauty websites can be refreshed into a more modern, premium, and conversion-focused experience.",
+      "Yes. Existing beauty websites can be updated with clearer services, better structure, and a smoother booking path.",
   },
   {
     question: "Do I need professional photos?",

@@ -2,7 +2,7 @@ const features = [
   {
     title: "Online booking",
     description:
-      "We integrate your preferred booking software directly into your website so clients can schedule 24/7 without back-and-forth DMs.",
+      "Connect your booking software so clients can schedule without back-and-forth messages.",
   },
   {
     title: "Service menu with pricing",
@@ -17,7 +17,7 @@ const features = [
   {
     title: "Contact form",
     description:
-      "Capture serious inquiries directly from your website and follow up quickly.",
+      "Collect inquiries from people who want details before they book.",
   },
   {
     title: "Google Maps/location section",
@@ -39,18 +39,18 @@ export function FeaturesSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
             Features
           </p>
-          <h2 className="section-heading">Everything beauty clients expect in one polished site</h2>
+          <h2 className="section-heading">Everything clients need before they book</h2>
           <p className="section-copy">
-            This is more than a scheduler. Your website is structured to showcase
-            your brand, answer questions, build trust, and guide visitors toward booking.
+            This is more than a scheduler. Your website shows your work, explains
+            your services, answers common questions, and guides visitors toward booking.
           </p>
           <div className="mt-8 rounded-[1.75rem] border border-gold/20 bg-gold/10 p-5">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">
               Booking Platform Integration Included
             </p>
             <p className="mt-3 text-sm leading-7 text-muted">
-              We integrate your preferred booking software into your website. If
-              you do not have one yet, we can help you choose and set one up.
+              We connect your preferred booking software to your website. If you
+              do not have one yet, we can help you choose and set one up.
             </p>
             <p className="mt-3 text-xs uppercase tracking-[0.18em] text-muted">
               Third-party booking software fees are separate and paid directly by client.

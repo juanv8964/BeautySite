@@ -16,9 +16,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "BeautySite Builder",
+  title: "BeautySite Builders",
   description:
-    "Premium booking websites for nail salons, beauty studios, lash artists, and spa businesses.",
+    "Custom websites for nail salons, lash artists, beauty studios, and spa businesses that want a clearer path to booking.",
 };
 
 export default function RootLayout({

@@ -2,12 +2,12 @@ const audiences = [
   {
     title: "Nail Techs",
     description:
-      "Showcase sets, pricing, policies, and booking links in one polished place.",
+      "Showcase sets, pricing, policies, and booking links in one organized place.",
   },
   {
     title: "Lash Artists",
     description:
-      "Turn lash menus, policies, and booking flows into a premium client experience.",
+      "Bring lash menus, policies, and booking links together in a clear client-friendly layout.",
   },
   {
     title: "Brow Artists",
@@ -52,7 +52,7 @@ export function WhoThisIsForSection() {
           <h2 className="section-heading">Built for beauty professionals who want more than a basic booking link</h2>
           <p className="section-copy">
             Whether you already use a booking system or need help choosing one,
-            these websites are designed for beauty brands that want to look more polished online.
+            these websites are built for beauty pros who want to look more organized online.
           </p>
         </div>
 

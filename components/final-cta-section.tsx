@@ -9,11 +9,11 @@ export function FinalCtaSection() {
                 Final Step
               </p>
               <h2 className="mt-4 font-display text-5xl text-white sm:text-6xl">
-                Ready to upgrade your beauty brand online?
+                Ready for a website that makes booking feel easier?
               </h2>
               <p className="mt-5 max-w-3xl text-base leading-8 text-muted sm:text-lg">
-                Book a demo and let&apos;s build a website that helps clients trust
-                you before they ever walk in.
+                Book a demo and let&apos;s map out a site that shows your work,
+                explains your services, and connects clients to your booking system.
               </p>
             </div>
             <div>

@@ -10,11 +10,11 @@ const beforePoints = [
 ];
 
 const afterPoints = [
-  "Fully branded premium design",
-  "Luxury aesthetic tailored to your business",
+  "Custom design that matches your business",
+  "A site that feels more personal than a booking template",
   "Portfolio, FAQs, policies, and testimonials",
   "Integrated booking flow",
-  "Built to convert visitors into booked clients",
+  "Built to help visitors become booked clients",
 ];
 
 const afterPreviewItems = [
@@ -55,12 +55,12 @@ export function MoreThanBookingSection() {
               Concept Demo
             </p>
             <h2 className="section-heading">
-              Upgrade From Basic Booking Links to a Premium Online Experience
+              Turn a Basic Booking Link Into a Full Website
             </h2>
             <p className="section-copy mx-auto">
               Booking platforms help clients schedule appointments. We build the
-              premium branded experience around it, designed to impress visitors,
-              build trust, and convert more clients.
+              website around that booking link, so visitors can see your work,
+              understand your services, and feel ready to book.
             </p>
           </div>
 
@@ -140,7 +140,7 @@ export function MoreThanBookingSection() {
                       <div>
                         <p className="font-display text-3xl text-white">Glow Beauty Lounge</p>
                         <p className="mt-1 text-sm text-[#e4bfd1]">
-                          Luxury beauty website concept
+                          Custom beauty website concept
                         </p>
                       </div>
                       <div className="rounded-full border border-fuchsia-200/25 bg-fuchsia-200/10 px-3 py-1 text-xs text-[#ffbad4]">
@@ -235,14 +235,14 @@ export function MoreThanBookingSection() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
-                        Glow Beauty Lounge
-                      </p>
-                      <h3 className="mt-3 font-display text-4xl text-white sm:text-5xl">
-                        Premium Website Concept Preview
+                      Glow Beauty Lounge
+                    </p>
+                    <h3 className="mt-3 font-display text-4xl text-white sm:text-5xl">
+                        Full Website Concept Preview
                       </h3>
                       <p className="mt-3 max-w-2xl text-sm leading-7 text-[#e4bfd1] sm:text-base">
-                        A richer branded experience built around trust, style, and a
-                        seamless path into booking.
+                        A clearer website experience built around your services,
+                        your work, and a simple path into booking.
                       </p>
                     </div>
                     <div className="rounded-full border border-gold/35 bg-gold/15 px-4 py-2 text-sm font-medium text-gold">
@@ -255,8 +255,8 @@ export function MoreThanBookingSection() {
                       <p className="text-xs uppercase tracking-[0.2em] text-[#f1c7d9]">
                         Hero Experience
                       </p>
-                      <h4 className="mt-3 font-display text-3xl text-white">
-                        Luxury lash artistry with a polished first impression
+                    <h4 className="mt-3 font-display text-3xl text-white">
+                        Lash services with a stronger first impression
                       </h4>
                       <p className="mt-3 text-sm leading-7 text-[#ead4df]">
                         Portfolio, policies, testimonials, and clear calls to action

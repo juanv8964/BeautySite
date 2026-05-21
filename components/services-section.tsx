@@ -2,7 +2,7 @@ const services = [
   {
     title: "Nail Salon Websites",
     description:
-      "Showcase manicures, gel sets, and pedicures with clean menus, booking links, and a polished brand feel.",
+      "Show manicures, gel sets, pedicures, pricing, policies, and booking links in one clean place.",
   },
   {
     title: "Lash & Brow Websites",
@@ -12,7 +12,7 @@ const services = [
   {
     title: "Hair Salon Websites",
     description:
-      "Promote cuts, color services, extensions, and stylist expertise with conversion-focused layouts.",
+      "Present cuts, color, extensions, stylist details, transformations, and booking options clearly.",
   },
   {
     title: "Spa & Beauty Websites",
@@ -29,11 +29,11 @@ export function ServicesSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blush">
             Website Packages
           </p>
-          <h2 className="section-heading">Professional websites tailored to beauty businesses</h2>
+          <h2 className="section-heading">Websites made for beauty businesses</h2>
           <p className="section-copy">
             Whether you run a solo studio or a growing salon, each package is
-            designed to present your brand beautifully, support your marketing,
-            and guide visitors into a polished booking experience.
+            built to show your services clearly, answer client questions, and
+            connect visitors to your booking system.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">

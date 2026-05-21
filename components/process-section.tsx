@@ -12,7 +12,7 @@ const steps = [
   {
     title: "We Build Your Website",
     description:
-      "Your site is designed and structured to feel premium, mobile-friendly, and ready to turn visits into inquiries.",
+      "Your site is built to look professional, work well on phones, and make booking easier.",
   },
   {
     title: "Launch and Support",
@@ -29,7 +29,7 @@ export function ProcessSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blush">
             How It Works
           </p>
-          <h2 className="section-heading">A simple launch process built for busy beauty pros</h2>
+          <h2 className="section-heading">A simple launch process for busy beauty pros</h2>
           <p className="section-copy mx-auto">
             You focus on your clients and your craft. We handle the website build
             and help you get launched with confidence.

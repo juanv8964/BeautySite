@@ -2,7 +2,7 @@ const showcaseItems = [
   {
     title: "Service Menu / Pricing",
     description:
-      "Clearly present your services, pricing, and booking options in a polished branded layout.",
+      "Clearly present your services, pricing, and booking options in a clean branded layout.",
     tone: "from-[#5c2346] to-[#d3799f]",
   },
   {
@@ -26,7 +26,7 @@ const showcaseItems = [
   {
     title: "Testimonials / Reviews",
     description:
-      "Display social proof to increase trust and conversions.",
+      "Display reviews that help new clients feel more confident booking.",
     tone: "from-[#2c1733] to-[#f0c27a]",
   },
   {
@@ -47,7 +47,7 @@ export function GallerySection() {
           </p>
           <h2 className="section-heading">Examples of What Your Website Can Showcase</h2>
           <p className="section-copy">
-            Preview the kinds of branded sections included in a premium beauty website.
+            Preview the types of sections a custom beauty website can include.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
