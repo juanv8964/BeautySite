@@ -79,8 +79,8 @@ export function MoreThanBookingSection() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            <article className="glass-card overflow-hidden rounded-[2.2rem] border-white/5 bg-white/[0.03] p-6 sm:p-8">
+          <div className="mt-12 grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+            <article className="glass-card h-fit overflow-hidden rounded-[2.2rem] border-white/5 bg-white/[0.03] p-6 sm:p-8">
               <div className="rounded-[1.8rem] border border-white/10 bg-[#120f14] p-5 saturate-50">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-muted">
                   Before
@@ -133,14 +133,14 @@ export function MoreThanBookingSection() {
               </div>
             </article>
 
-            <article className="group glass-card overflow-hidden rounded-[2.2rem] border-gold/35 bg-[radial-gradient(circle_at_top_left,rgba(255,151,199,0.34),transparent_34%),linear-gradient(135deg,#8b235f_0%,#51196a_48%,#16071f_100%)] p-6 shadow-[0_24px_90px_rgba(214,104,159,0.28)] transition duration-300 hover:scale-[1.018] hover:border-gold/55 hover:shadow-[0_30px_110px_rgba(240,194,122,0.2)] active:scale-[1.01] sm:p-8">
-              <div className="rounded-[1.8rem] border border-gold/25 bg-[linear-gradient(145deg,rgba(255,255,255,0.13),rgba(255,255,255,0.03)_42%,rgba(0,0,0,0.18))] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_18px_60px_rgba(0,0,0,0.22)] transition duration-300 group-hover:border-gold/40">
+            <article className="group glass-card h-fit overflow-hidden rounded-[2.2rem] border-gold/35 bg-[radial-gradient(circle_at_top_left,rgba(255,151,199,0.34),transparent_34%),linear-gradient(135deg,#8b235f_0%,#51196a_48%,#16071f_100%)] p-5 shadow-[0_24px_90px_rgba(214,104,159,0.28)] transition duration-300 hover:scale-[1.018] hover:border-gold/55 hover:shadow-[0_30px_110px_rgba(240,194,122,0.2)] active:scale-[1.01] sm:p-6">
+              <div className="rounded-[1.8rem] border border-gold/25 bg-[linear-gradient(145deg,rgba(255,255,255,0.13),rgba(255,255,255,0.03)_42%,rgba(0,0,0,0.18))] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_18px_60px_rgba(0,0,0,0.22)] transition duration-300 group-hover:border-gold/40 sm:p-5">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
                       After
                     </p>
-                    <h3 className="mt-3 font-display text-4xl text-white">
+                    <h3 className="mt-3 font-display text-3xl text-white sm:text-4xl">
                       Full Website Experience
                     </h3>
                   </div>
@@ -159,10 +159,10 @@ export function MoreThanBookingSection() {
                     </span>
                   </div>
 
-                  <div className="bg-[radial-gradient(circle_at_20%_0%,rgba(255,142,190,0.28),transparent_32%),linear-gradient(150deg,#8f2f70_0%,#551d5f_46%,#220929_100%)] p-5">
-                    <div className="flex flex-col gap-5 border-b border-white/10 pb-5 sm:flex-row sm:items-start sm:justify-between">
+                  <div className="bg-[radial-gradient(circle_at_20%_0%,rgba(255,142,190,0.28),transparent_32%),linear-gradient(150deg,#8f2f70_0%,#551d5f_46%,#220929_100%)] p-4 sm:p-5">
+                    <div className="flex flex-col gap-4 border-b border-white/10 pb-4 sm:flex-row sm:items-start sm:justify-between">
                       <div>
-                        <p className="font-display text-3xl leading-tight text-white">
+                        <p className="font-display text-2xl leading-tight text-white sm:text-3xl">
                           Glow Beauty Lounge
                         </p>
                         <p className="mt-2 max-w-sm text-sm leading-6 text-[#f2d0df]">
@@ -181,28 +181,28 @@ export function MoreThanBookingSection() {
                       </div>
                     </div>
 
-                    <div className="mt-5 grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
+                    <div className="mt-4 grid gap-4 md:grid-cols-[1fr_0.86fr]">
                       <div className="rounded-[1.2rem] border border-white/10 bg-black/15 p-4">
                         <p className="text-xs uppercase tracking-[0.2em] text-gold">
                           Website preview
                         </p>
-                        <h4 className="mt-2 font-display text-3xl leading-tight text-white">
-                          A better first impression before clients book
+                        <h4 className="mt-2 font-display text-2xl leading-tight text-white sm:text-3xl">
+                          A polished path from interest to booking
                         </h4>
-                        <p className="mt-3 text-sm leading-7 text-[#f0d4df]">
-                          Show your best work, explain what to expect, answer common
-                          questions, and guide visitors into your booking link.
+                        <p className="mt-3 text-sm leading-6 text-[#f0d4df]">
+                          Show your best work, explain what to expect, answer common questions,
+                          and guide visitors into your booking link.
                         </p>
-                        <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#f0c27a] px-5 py-3 text-sm font-semibold text-[#140713] shadow-[0_12px_30px_rgba(255,142,190,0.36)]">
+                        <div className="mt-4 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#f0c27a] px-5 py-3 text-sm font-semibold text-[#140713] shadow-[0_12px_30px_rgba(255,142,190,0.36)]">
                           Book Appointment
                         </div>
                       </div>
 
-                      <div className="grid gap-3">
+                      <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-1">
                         {websitePreviewCards.map((item) => (
                           <div
                             key={item.title}
-                            className="rounded-[1rem] border border-white/12 bg-white/10 px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"
+                            className="rounded-[1rem] border border-white/12 bg-white/10 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"
                           >
                             <p className="text-sm font-semibold text-white">{item.title}</p>
                             <p className="mt-1 text-xs text-[#f2d0df]">{item.detail}</p>
@@ -232,10 +232,10 @@ export function MoreThanBookingSection() {
                   Tap to Preview Full Demo
                 </button>
 
-                <ul className="mt-6 grid gap-3">
+                <ul className="mt-5 grid gap-2">
                   {afterPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm leading-6 text-[#ead4df]">
-                      <span className="mt-2 h-2 w-2 rounded-full bg-[#ff9ac4]" />
+                    <li key={point} className="flex items-start gap-3 text-xs leading-5 text-[#ead4df] sm:text-sm">
+                      <span className="mt-1.5 h-2 w-2 rounded-full bg-[#ff9ac4]" />
                       <span>{point}</span>
                     </li>
                   ))}
