@@ -50,27 +50,29 @@ export function GallerySection() {
             Preview the types of sections a custom beauty website can include.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
           {showcaseItems.map((item, index) => (
             <div key={item.title} className="glass-card overflow-hidden">
               <div
-                className={`relative flex min-h-[15rem] flex-col justify-between overflow-hidden bg-gradient-to-br ${item.tone} p-5 sm:p-6`}
+                className={`relative flex min-h-[12.5rem] flex-col justify-between overflow-hidden bg-gradient-to-br ${item.tone} p-4 sm:min-h-[15rem] sm:p-6`}
               >
                 <div className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-white/15 blur-2xl" />
                 <div className="flex items-center justify-between gap-4">
-                  <span className="rounded-full border border-white/15 bg-black/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 backdrop-blur-sm">
+                  <span className="rounded-full border border-white/15 bg-black/15 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-white/80 backdrop-blur-sm sm:text-xs sm:tracking-[0.16em]">
                     Website section
                   </span>
-                  <span className="font-display text-4xl text-white/25">
+                  <span className="font-display text-3xl text-white/25 sm:text-4xl">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
 
-                <div className="relative mt-8 w-full rounded-[1.5rem] border border-white/15 bg-black/20 p-5 backdrop-blur-sm">
+                <div className="relative mt-6 w-full rounded-[1.25rem] border border-white/15 bg-black/20 p-4 backdrop-blur-sm sm:mt-8 sm:rounded-[1.5rem] sm:p-5">
                   <p className="font-display text-2xl leading-tight text-white sm:text-3xl">
                     {item.title}
                   </p>
-                  <p className="mt-3 text-sm leading-7 text-white/80">{item.description}</p>
+                  <p className="mt-2 text-sm leading-6 text-white/80 sm:mt-3 sm:leading-7">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>
