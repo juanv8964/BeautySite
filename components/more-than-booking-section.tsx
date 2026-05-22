@@ -3,27 +3,20 @@
 import { useEffect, useState } from "react";
 
 const beforePoints = [
-  "Basic scheduling template",
-  "Limited branding",
-  "Minimal trust-building",
-  "Looks like everyone else",
+  "Basic scheduling page",
+  "Little room for your brand",
+  "No portfolio or reviews",
+  "Booking is the only focus",
 ];
 
 const afterPoints = [
   "Custom design that matches your business",
-  "A site that feels more personal than a booking template",
-  "Portfolio, FAQs, policies, and testimonials",
-  "Integrated booking flow",
-  "Built to help visitors become booked clients",
+  "Services, policies, reviews, and portfolio in one place",
+  "Booking software connected in a clear flow",
 ];
 
-const afterPreviewItems = [
-  "Portfolio",
-  "About Me",
-  "Testimonials",
-  "Policies",
-  "Book Appointment",
-];
+const afterNavItems = ["Home", "Services", "Portfolio", "Book"];
+const portfolioPreviewItems = ["Classic Set", "Volume Set", "Lash Lift"];
 
 export function MoreThanBookingSection() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -71,15 +64,15 @@ export function MoreThanBookingSection() {
                   Before
                 </p>
                 <h3 className="mt-3 font-display text-4xl text-white/90">
-                  Generic Booking Page
+                  Booking Link Only
                 </h3>
 
-                <div className="mt-6 rounded-[1.8rem] border border-dashed border-white/10 bg-white/[0.02] p-4">
-                  <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4">
-                    <div className="mb-4 flex items-center justify-between">
+                <div className="mt-6 rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] p-4">
+                  <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.03] p-4">
+                    <div className="mb-4 flex items-center justify-between gap-3">
                       <div>
                         <p className="text-sm font-semibold text-white/90">Glow Beauty Studio</p>
-                        <p className="text-xs text-muted">Generic scheduler preview</p>
+                        <p className="text-xs text-muted">Generic scheduler page</p>
                       </div>
                       <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted">
                         Template
@@ -94,7 +87,7 @@ export function MoreThanBookingSection() {
                       ].map((item, index) => (
                         <div
                           key={item}
-                          className={`rounded-[1rem] border border-white/10 px-4 py-3 text-sm ${
+                          className={`rounded-[0.9rem] border border-white/10 px-4 py-3 text-sm ${
                             index === 3
                               ? "bg-white/10 font-medium text-white/85"
                               : "bg-white/[0.04] text-muted"
@@ -120,69 +113,88 @@ export function MoreThanBookingSection() {
 
             <article className="group glass-card overflow-hidden rounded-[2.2rem] border-fuchsia-300/30 bg-gradient-to-br from-[#2a102a] via-[#261033] to-[#120815] p-6 shadow-[0_18px_60px_rgba(214,104,159,0.18)] transition duration-300 hover:scale-[1.015] hover:border-fuchsia-300/50 hover:shadow-[0_24px_80px_rgba(214,104,159,0.28)] active:scale-[1.01] sm:p-8">
               <div className="rounded-[1.8rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#5b204f] via-[#34163d] to-[#190b24] p-5 shadow-[0_18px_50px_rgba(240,194,122,0.08)] transition duration-300 group-hover:border-fuchsia-200/35 group-hover:shadow-[0_22px_70px_rgba(240,194,122,0.16)]">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
                       After
                     </p>
                     <h3 className="mt-3 font-display text-4xl text-white">
-                      BeautySite Builders Custom Website
+                      Custom Website + Booking
                     </h3>
                   </div>
-                  <div className="rounded-full border border-gold/35 bg-gold/15 px-3 py-1 text-xs font-medium text-gold shadow-[0_0_20px_rgba(240,194,122,0.12)]">
+                  <div className="w-fit rounded-full border border-gold/35 bg-gold/15 px-3 py-1 text-xs font-medium text-gold shadow-[0_0_20px_rgba(240,194,122,0.12)]">
                     Custom Brand
                   </div>
                 </div>
 
-                <div className="mt-6 overflow-hidden rounded-[1.8rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#7a245f] via-[#4b184a] to-[#1a0d24] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_20px_60px_rgba(97,27,83,0.28)] transition duration-300 group-hover:border-fuchsia-200/35">
-                  <div className="rounded-[1.5rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(0,0,0,0.18))] p-5 backdrop-blur-sm">
-                    <div className="flex items-center justify-between gap-4">
+                <div className="mt-6 overflow-hidden rounded-[1.7rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#7a245f] via-[#4b184a] to-[#1a0d24] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_20px_60px_rgba(97,27,83,0.28)] transition duration-300 group-hover:border-fuchsia-200/35">
+                  <div className="rounded-[1.35rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(0,0,0,0.18))] p-5 backdrop-blur-sm">
+                    <div className="flex flex-col gap-4 border-b border-white/10 pb-4 sm:flex-row sm:items-center sm:justify-between">
                       <div>
                         <p className="font-display text-3xl text-white">Glow Beauty Lounge</p>
                         <p className="mt-1 text-sm text-[#e4bfd1]">
-                          Custom beauty website concept
+                          Lash services, policies, reviews, and booking in one place
                         </p>
                       </div>
-                      <div className="rounded-full border border-fuchsia-200/25 bg-fuchsia-200/10 px-3 py-1 text-xs text-[#ffbad4]">
-                        Custom website
+                      <div className="flex flex-wrap gap-2">
+                        {afterNavItems.map((item) => (
+                          <span
+                            key={item}
+                            className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs text-white"
+                          >
+                            {item}
+                          </span>
+                        ))}
                       </div>
                     </div>
 
-                    <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                      {afterPreviewItems.map((item, index) => (
-                        <div
-                          key={item}
-                          className={`rounded-[1rem] border px-4 py-4 text-sm transition duration-300 ${
-                            index === 4
-                              ? "border-fuchsia-200/30 bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] font-semibold text-white shadow-[0_10px_30px_rgba(214,104,159,0.35)] sm:col-span-2"
-                              : "border-white/10 bg-white/8 text-white"
-                          }`}
-                        >
-                          {item}
+                    <div className="mt-5 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
+                      <div>
+                        <p className="text-xs uppercase tracking-[0.2em] text-[#f1c7d9]">
+                          Website preview
+                        </p>
+                        <h4 className="mt-2 font-display text-3xl leading-tight text-white">
+                          Lash work clients can trust before they book
+                        </h4>
+                        <p className="mt-3 text-sm leading-7 text-[#ead4df]">
+                          Show your style, explain your services, answer common
+                          questions, and send clients into your booking link.
+                        </p>
+                        <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)]">
+                          Book Appointment
                         </div>
-                      ))}
+                      </div>
+
+                      <div className="grid gap-3">
+                        {portfolioPreviewItems.map((item) => (
+                          <div
+                            key={item}
+                            className="rounded-[1rem] border border-white/10 bg-white/8 px-4 py-4 text-sm text-white"
+                          >
+                            {item}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                  <ul className="space-y-3">
-                    {afterPoints.map((point) => (
-                      <li key={point} className="flex items-start gap-3 text-sm leading-6 text-[#ead4df]">
-                        <span className="mt-2 h-2 w-2 rounded-full bg-[#ff9ac4]" />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
 
                 <button
                   type="button"
                   onClick={() => setIsPreviewOpen(true)}
-                  className="mt-6 inline-flex items-center justify-center rounded-full border border-fuchsia-200/30 bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)] transition duration-300 hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(214,104,159,0.45)] focus:outline-none focus:ring-2 focus:ring-blush/50 animate-pulse"
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-fuchsia-200/30 bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)] transition duration-300 hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(214,104,159,0.45)] focus:outline-none focus:ring-2 focus:ring-blush/50 sm:w-auto"
                 >
                   Tap to Preview Full Demo
                 </button>
+
+                <ul className="mt-6 grid gap-3">
+                  {afterPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-3 text-sm leading-6 text-[#ead4df]">
+                      <span className="mt-2 h-2 w-2 rounded-full bg-[#ff9ac4]" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </article>
           </div>
@@ -235,9 +247,9 @@ export function MoreThanBookingSection() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
-                      Glow Beauty Lounge
-                    </p>
-                    <h3 className="mt-3 font-display text-4xl text-white sm:text-5xl">
+                        Glow Beauty Lounge
+                      </p>
+                      <h3 className="mt-3 font-display text-4xl text-white sm:text-5xl">
                         Full Website Concept Preview
                       </h3>
                       <p className="mt-3 max-w-2xl text-sm leading-7 text-[#e4bfd1] sm:text-base">
@@ -255,7 +267,7 @@ export function MoreThanBookingSection() {
                       <p className="text-xs uppercase tracking-[0.2em] text-[#f1c7d9]">
                         Hero Experience
                       </p>
-                    <h4 className="mt-3 font-display text-3xl text-white">
+                      <h4 className="mt-3 font-display text-3xl text-white">
                         Lash services with a stronger first impression
                       </h4>
                       <p className="mt-3 text-sm leading-7 text-[#ead4df]">
