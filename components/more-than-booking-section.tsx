@@ -10,13 +10,35 @@ const beforePoints = [
 ];
 
 const afterPoints = [
-  "Custom design that matches your business",
-  "Services, policies, reviews, and portfolio in one place",
-  "Booking software connected in a clear flow",
+  "A full branded experience before the booking step",
+  "Services, portfolio, reviews, policies, and booking in one place",
+  "Your booking software connected inside a stronger client journey",
 ];
 
-const afterNavItems = ["Home", "Services", "Portfolio", "Book"];
-const portfolioPreviewItems = ["Classic Set", "Volume Set", "Lash Lift"];
+const afterNavItems = ["Services", "Portfolio", "Reviews", "Book"];
+const websitePreviewCards = [
+  { title: "Classic Set", detail: "From $95" },
+  { title: "Volume Set", detail: "Most booked" },
+  { title: "Lash Lift", detail: "Low-maintenance beauty" },
+];
+const modalSections = [
+  {
+    title: "Service Menu",
+    copy: "Simple pricing and service details so clients know what to choose.",
+  },
+  {
+    title: "Portfolio",
+    copy: "A polished place to show real results before clients book.",
+  },
+  {
+    title: "Reviews",
+    copy: "Social proof that builds confidence with new visitors.",
+  },
+  {
+    title: "Policies",
+    copy: "Deposit, late, and cancellation details explained clearly.",
+  },
+];
 
 export function MoreThanBookingSection() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -111,36 +133,47 @@ export function MoreThanBookingSection() {
               </div>
             </article>
 
-            <article className="group glass-card overflow-hidden rounded-[2.2rem] border-fuchsia-300/30 bg-gradient-to-br from-[#2a102a] via-[#261033] to-[#120815] p-6 shadow-[0_18px_60px_rgba(214,104,159,0.18)] transition duration-300 hover:scale-[1.015] hover:border-fuchsia-300/50 hover:shadow-[0_24px_80px_rgba(214,104,159,0.28)] active:scale-[1.01] sm:p-8">
-              <div className="rounded-[1.8rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#5b204f] via-[#34163d] to-[#190b24] p-5 shadow-[0_18px_50px_rgba(240,194,122,0.08)] transition duration-300 group-hover:border-fuchsia-200/35 group-hover:shadow-[0_22px_70px_rgba(240,194,122,0.16)]">
+            <article className="group glass-card overflow-hidden rounded-[2.2rem] border-gold/35 bg-[radial-gradient(circle_at_top_left,rgba(255,151,199,0.34),transparent_34%),linear-gradient(135deg,#8b235f_0%,#51196a_48%,#16071f_100%)] p-6 shadow-[0_24px_90px_rgba(214,104,159,0.28)] transition duration-300 hover:scale-[1.018] hover:border-gold/55 hover:shadow-[0_30px_110px_rgba(240,194,122,0.2)] active:scale-[1.01] sm:p-8">
+              <div className="rounded-[1.8rem] border border-gold/25 bg-[linear-gradient(145deg,rgba(255,255,255,0.13),rgba(255,255,255,0.03)_42%,rgba(0,0,0,0.18))] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_18px_60px_rgba(0,0,0,0.22)] transition duration-300 group-hover:border-gold/40">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
                       After
                     </p>
                     <h3 className="mt-3 font-display text-4xl text-white">
-                      Custom Website + Booking
+                      Full Website Experience
                     </h3>
                   </div>
                   <div className="w-fit rounded-full border border-gold/35 bg-gold/15 px-3 py-1 text-xs font-medium text-gold shadow-[0_0_20px_rgba(240,194,122,0.12)]">
-                    Custom Brand
+                    Branded Website
                   </div>
                 </div>
 
-                <div className="mt-6 overflow-hidden rounded-[1.7rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#7a245f] via-[#4b184a] to-[#1a0d24] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_20px_60px_rgba(97,27,83,0.28)] transition duration-300 group-hover:border-fuchsia-200/35">
-                  <div className="rounded-[1.35rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(0,0,0,0.18))] p-5 backdrop-blur-sm">
-                    <div className="flex flex-col gap-4 border-b border-white/10 pb-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="mt-6 overflow-hidden rounded-[1.7rem] border border-gold/25 bg-[#130716] shadow-[0_22px_70px_rgba(0,0,0,0.28)] transition duration-300 group-hover:border-gold/40">
+                  <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.07] px-4 py-3">
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#ff8ebe]" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-gold" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-white/45" />
+                    <span className="ml-2 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[0.68rem] text-[#f7d8e6]">
+                      glowbeautylounge.com
+                    </span>
+                  </div>
+
+                  <div className="bg-[radial-gradient(circle_at_20%_0%,rgba(255,142,190,0.28),transparent_32%),linear-gradient(150deg,#8f2f70_0%,#551d5f_46%,#220929_100%)] p-5">
+                    <div className="flex flex-col gap-5 border-b border-white/10 pb-5 sm:flex-row sm:items-start sm:justify-between">
                       <div>
-                        <p className="font-display text-3xl text-white">Glow Beauty Lounge</p>
-                        <p className="mt-1 text-sm text-[#e4bfd1]">
-                          Lash services, policies, reviews, and booking in one place
+                        <p className="font-display text-3xl leading-tight text-white">
+                          Glow Beauty Lounge
+                        </p>
+                        <p className="mt-2 max-w-sm text-sm leading-6 text-[#f2d0df]">
+                          Lash services, proof, policies, and booking in one polished place.
                         </p>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {afterNavItems.map((item) => (
                           <span
                             key={item}
-                            className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs text-white"
+                            className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-medium text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]"
                           >
                             {item}
                           </span>
@@ -148,33 +181,45 @@ export function MoreThanBookingSection() {
                       </div>
                     </div>
 
-                    <div className="mt-5 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.2em] text-[#f1c7d9]">
+                    <div className="mt-5 grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
+                      <div className="rounded-[1.2rem] border border-white/10 bg-black/15 p-4">
+                        <p className="text-xs uppercase tracking-[0.2em] text-gold">
                           Website preview
                         </p>
                         <h4 className="mt-2 font-display text-3xl leading-tight text-white">
-                          Lash work clients can trust before they book
+                          A better first impression before clients book
                         </h4>
-                        <p className="mt-3 text-sm leading-7 text-[#ead4df]">
-                          Show your style, explain your services, answer common
-                          questions, and send clients into your booking link.
+                        <p className="mt-3 text-sm leading-7 text-[#f0d4df]">
+                          Show your best work, explain what to expect, answer common
+                          questions, and guide visitors into your booking link.
                         </p>
-                        <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)]">
+                        <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#f0c27a] px-5 py-3 text-sm font-semibold text-[#140713] shadow-[0_12px_30px_rgba(255,142,190,0.36)]">
                           Book Appointment
                         </div>
                       </div>
 
                       <div className="grid gap-3">
-                        {portfolioPreviewItems.map((item) => (
+                        {websitePreviewCards.map((item) => (
                           <div
-                            key={item}
-                            className="rounded-[1rem] border border-white/10 bg-white/8 px-4 py-4 text-sm text-white"
+                            key={item.title}
+                            className="rounded-[1rem] border border-white/12 bg-white/10 px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"
                           >
-                            {item}
+                            <p className="text-sm font-semibold text-white">{item.title}</p>
+                            <p className="mt-1 text-xs text-[#f2d0df]">{item.detail}</p>
                           </div>
                         ))}
                       </div>
+                    </div>
+
+                    <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                      {["Portfolio", "Policies", "Reviews"].map((item) => (
+                        <div
+                          key={item}
+                          className="rounded-[0.95rem] border border-white/10 bg-white/[0.08] px-3 py-3 text-center text-xs font-medium text-[#ffe7f1]"
+                        >
+                          {item}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -182,7 +227,7 @@ export function MoreThanBookingSection() {
                 <button
                   type="button"
                   onClick={() => setIsPreviewOpen(true)}
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-fuchsia-200/30 bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)] transition duration-300 hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(214,104,159,0.45)] focus:outline-none focus:ring-2 focus:ring-blush/50 sm:w-auto"
+                  className="mt-5 inline-flex w-full animate-[pulse_2.8s_ease-in-out_infinite] items-center justify-center rounded-full border border-gold/35 bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#f0c27a] px-6 py-3 text-sm font-semibold text-[#140713] shadow-[0_12px_34px_rgba(255,142,190,0.36)] transition duration-300 hover:scale-[1.02] hover:shadow-[0_18px_44px_rgba(240,194,122,0.28)] focus:outline-none focus:ring-2 focus:ring-blush/50 sm:w-auto"
                 >
                   Tap to Preview Full Demo
                 </button>
@@ -242,50 +287,60 @@ export function MoreThanBookingSection() {
                 </button>
               </div>
 
-              <div className="rounded-[1.7rem] border border-fuchsia-200/20 bg-gradient-to-br from-[#7a245f] via-[#4b184a] to-[#1a0d24] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_20px_60px_rgba(97,27,83,0.28)] sm:p-6">
-                <div className="rounded-[1.5rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(0,0,0,0.18))] p-5 backdrop-blur-sm sm:p-8">
+              <div className="overflow-hidden rounded-[1.7rem] border border-gold/25 bg-[#130716] shadow-[0_24px_80px_rgba(0,0,0,0.34)]">
+                <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.07] px-4 py-3">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#ff8ebe]" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-gold" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-white/45" />
+                  <span className="ml-2 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[0.68rem] text-[#f7d8e6]">
+                    glowbeautylounge.com
+                  </span>
+                </div>
+
+                <div className="bg-[radial-gradient(circle_at_20%_0%,rgba(255,142,190,0.28),transparent_34%),linear-gradient(150deg,#8f2f70_0%,#551d5f_46%,#220929_100%)] p-5 sm:p-8">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
-                      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffb4d2]">
+                      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
                         Glow Beauty Lounge
                       </p>
                       <h3 className="mt-3 font-display text-4xl text-white sm:text-5xl">
-                        Full Website Concept Preview
+                        Full Website Experience Preview
                       </h3>
                       <p className="mt-3 max-w-2xl text-sm leading-7 text-[#e4bfd1] sm:text-base">
-                        A clearer website experience built around your services,
-                        your work, and a simple path into booking.
+                        A branded website experience built around your services,
+                        your proof, and a clear path into your booking software.
                       </p>
                     </div>
                     <div className="rounded-full border border-gold/35 bg-gold/15 px-4 py-2 text-sm font-medium text-gold">
-                      Custom Brand
+                      Branded Website
                     </div>
                   </div>
 
                   <div className="mt-8 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
-                    <div className="rounded-[1.4rem] border border-white/10 bg-white/8 p-5">
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#f1c7d9]">
-                        Hero Experience
+                    <div className="rounded-[1.4rem] border border-white/10 bg-black/15 p-5">
+                      <p className="text-xs uppercase tracking-[0.2em] text-gold">
+                        Homepage
                       </p>
                       <h4 className="mt-3 font-display text-3xl text-white">
-                        Lash services with a stronger first impression
+                        Lash work clients can understand and trust
                       </h4>
                       <p className="mt-3 text-sm leading-7 text-[#ead4df]">
-                        Portfolio, policies, testimonials, and clear calls to action
-                        create a more complete client journey before the booking step.
+                        A stronger first impression helps visitors see your style,
+                        compare services, read what to expect, and book with confidence.
                       </p>
-                      <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#7b3f8c] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(214,104,159,0.35)]">
+                      <div className="mt-5 inline-flex rounded-full bg-gradient-to-r from-[#ff8ebe] via-[#d6689f] to-[#f0c27a] px-5 py-3 text-sm font-semibold text-[#140713] shadow-[0_10px_28px_rgba(214,104,159,0.35)]">
                         Book Appointment
                       </div>
                     </div>
 
                     <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-1">
-                      {["Portfolio", "About Me", "Testimonials", "Policies"].map((item) => (
+                      {modalSections.map((item) => (
                         <div
-                          key={item}
-                          className="rounded-[1.1rem] border border-white/10 bg-white/8 px-4 py-4 text-sm text-white"
+                          key={item.title}
+                          className="rounded-[1.1rem] border border-white/10 bg-white/10 px-4 py-4"
                         >
-                          {item}
+                          <p className="text-sm font-semibold text-white">{item.title}</p>
+                          <p className="mt-2 text-xs leading-5 text-[#ead4df]">{item.copy}</p>
                         </div>
                       ))}
                     </div>
